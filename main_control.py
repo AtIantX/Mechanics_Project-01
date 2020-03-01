@@ -17,11 +17,12 @@ class MainControl:
         self.intersection.get_variables_defined_random()
 
     def make_decision(self):
-        self.decision_controller.make_decision(car=self.car, intersection=self.intersection)
+        return self.decision_controller.make_decision(car=self.car, intersection=self.intersection)
 
 
 if __name__ == "__main__":
     control = MainControl()
     control.define_variables()
-    control.make_decision()
+    decision = control.make_decision()
+    print(decision)
 
