@@ -11,14 +11,14 @@ class CarController:
         self.car_acceleration_negative_range = (1, 4)
         self.initial_speed = 0
         self.initial_distance = 0
-        self.car_acceleration_positive = 0
-        self.car_acceleration_negative = 0
+        self.acceleration_positive = 0
+        self.acceleration_negative = 0
 
     def get_variables_defined_random(self):
         self.initial_speed = randrange(*self.initial_speed_range)
         self.initial_distance = randrange(*self.initial_distance_range)
-        self.car_acceleration_positive = randrange(*self.car_acceleration_positive_range)
-        self.car_acceleration_negative = randrange(*self.car_acceleration_negative_range)
+        self.acceleration_positive = randrange(*self.car_acceleration_positive_range)
+        self.acceleration_negative = randrange(*self.car_acceleration_negative_range)
         self.initial_speed = randrange(*self.initial_speed_range)
 
 
