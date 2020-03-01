@@ -36,9 +36,6 @@ class DecisionController:
         time_needed = self.calculate_time_needed_accelerating(self.acceleration_positive)
         time_needed_dec = self.calculate_time_needed_decelerating(self.acceleration_negative)
 
-        print(self.initial_speed, self.acceleration_negative, self.distance_all, "-------------")
-
-        print(time_needed_dec, time_needed, self.yellow_light_duration)
         if time_needed < self.yellow_light_duration:
             if time_needed_dec > self.yellow_light_duration:
                 return "You Need to Accelerate"
